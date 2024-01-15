@@ -21,3 +21,5 @@ chat_completion = client.chat.completions.create(
     ],
     model="gpt-3.5-turbo"
 )
+
+print(chat_completion.choices[0].message.content)
